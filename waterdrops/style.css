@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+.drops{
+position: relative;
+}
+.drop{
+    position: absolute;
+    width: 150px;
+    height: 156px;
+    background: #c3a7a700;
+    border-radius: 21% 75% 70% 30% / 70% 39% 61% 30%;
+    box-shadow: inset 38px 45px 10px 19px rgb(38 37 37 / 5%),
+     18px 15px 14px 10px rgb(108 95 95 / 10%), 
+     18px 15px 45px 26px rgb(58 53 53 / 5%),
+      inset -10px -10px 15px rgb(175 170 170 / 90%);
+}
+
+.drop::before{
+
+    content: '';
+    position: absolute;
+    top: 132px;
+    left: 76px;
+    background: rgb(241 238 238 / 91%);
+    width: 9px;
+    height: 12px;
+    border-radius: 50%;
+}
+.drop::after{
+
+    content: '';
+    position: absolute;
+    top: 127px;
+    left: 95px;
+    background: rgb(255 248 248 / 91%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.drop:nth-child(2){
+    transform: scale(0.5) translate(-211px,209px);
+    border-radius:45% 55% 79% 21% / 73% 39% 61% 27%  ;
+}
+
+
+.drop:nth-child(3){
+    transform: scale(0.5) translate(209px,-165px);
+    border-radius: 45% 55% 79% 21% / 73% 39% 61% 27%;
+}
+.drop:nth-child(4){
+   
+    transform: scale(0.45) translate(-249px,-201px);
+    border-radius: 15% 85% 42% 58% / 18% 76% 24% 82% ;
+}
